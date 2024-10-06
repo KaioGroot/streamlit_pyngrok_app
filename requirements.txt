@@ -1,4 +1,4 @@
-google-generativeai
+google-generative-ai
 requests
 beautifulsoup4
 firebase-admin
