@@ -47,7 +47,6 @@ with st.form("meuform"):
     if senha != confirmSenha or not senha or not confirmSenha :
      st.error("preencha os dados corretamente!")
     else:
-      auth.create_custom_token()
       database.push({"email": email, "senha":senha})
       st.success(f"email: {email} cadastrado com sucesso")
       auth.create_user_with_email_and_password(email=email, password=senha)
