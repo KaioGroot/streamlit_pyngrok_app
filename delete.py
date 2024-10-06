@@ -34,7 +34,7 @@ def gerado_pelogemini(prompt):
     salvar_prompts(prompts)
     resultado_final = falar_sobre(prompt)
     # Salvar o arquivo gerado
-    with open("drive/MyDrive/pages/gerado.py", 'w') as f:
+    with open("gerado.py", 'w') as f:
         f.write(resultado_final)
 
     # Renderizar o conteúdo no Streamlit
