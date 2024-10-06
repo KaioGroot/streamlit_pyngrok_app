@@ -1,6 +1,4 @@
 
-from IPython import get_ipython
-from IPython.display import display
 import json
 import streamlit as st
 import google.generativeai as genai
