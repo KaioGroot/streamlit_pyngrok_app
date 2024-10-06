@@ -1,5 +1,5 @@
 google-generativeai==0.8.2
-pyrebase4
 requests
 beautifulsoup4
 firebase-admin
+pyrebase4
