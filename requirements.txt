@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+scikit-learn
+google-generativeai
+pyrebase4
+beautifulsoup4
+firebase-admin
