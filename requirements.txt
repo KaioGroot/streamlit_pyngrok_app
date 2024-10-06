@@ -4,5 +4,6 @@ numpy
 scikit-learn
 google-generativeai
 pyrebase4
+pyrebase
 beautifulsoup4
 firebase-admin
