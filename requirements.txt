@@ -1,4 +1,4 @@
 requests
 beautifulsoup4
 firebase-admin
-pyrebase4
+pyrebase
