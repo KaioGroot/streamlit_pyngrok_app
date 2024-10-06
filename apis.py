@@ -17,7 +17,7 @@ st.write("vercel também cria CÓDIGOS!")
 
 
 try:
-  with open('/content/drive/MyDrive/pages/prompt.json', 'r', encoding='utf-8') as f:
+  with open('prompt.json', 'r', encoding='utf-8') as f:
     history = json.load(f)
 except FileNotFoundError:
   history = []
