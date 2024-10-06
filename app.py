@@ -66,14 +66,14 @@ def login_page():
   #pg.run()
   username = st.sidebar.text_input('Username')
   password = st.sidebar.text_input('Password', type='password')
-  create_page = st.Page("drive/MyDrive/pages/sobre.py", title="Início", icon=":material/help:")
-  cadastro = st.Page("drive/MyDrive/pages/cadastro.py", title="Cadastro", icon=":material/help:")
-  delete_page = st.Page("drive/MyDrive/pages/delete.py", title="criar", icon=":material/create:")
-  copy = st.Page("drive/MyDrive/pages/copyright.py", title="Gerador de copy", icon=":material/book:")
-  gerado = st.Page("drive/MyDrive/pages/gerado.py", title="Gerado", icon=":material/book:")
-  apis = st.Page("drive/MyDrive/pages/apis.py", title="Assistente ia", icon=":material/help:")
-  noticias = st.Page("drive/MyDrive/pages/noticias.py", title="Noticias", icon=":material/help:")
-  historiasGeradas = st.Page("drive/MyDrive/pages/galhistory.py", title="Historias Geradas", icon=":material/help:")
+  create_page = st.Page("sobre.py", title="Início", icon=":material/help:")
+  cadastro = st.Page("cadastro.py", title="Cadastro", icon=":material/help:")
+  delete_page = st.Page("delete.py", title="criar", icon=":material/create:")
+  copy = st.Page("copyright.py", title="Gerador de copy", icon=":material/book:")
+  gerado = st.Page("gerado.py", title="Gerado", icon=":material/book:")
+  apis = st.Page("apis.py", title="Assistente ia", icon=":material/help:")
+  noticias = st.Page("noticias.py", title="Noticias", icon=":material/help:")
+  historiasGeradas = st.Page("galhistory.py", title="Historias Geradas", icon=":material/help:")
 
   #st.sidebar.markdown('---')
 
@@ -97,7 +97,7 @@ def login_page():
 
 
 try:
- with open('/content/drive/MyDrive/pages/historias.json', 'r',encoding='utf-8') as f:
+ with open('historias.json', 'r',encoding='utf-8') as f:
    historinha = json.load(f)
 except FileNotFoundError:
    historinha = []
@@ -118,7 +118,7 @@ def gerar_historia_input():
     if st.button('Gerar História'):
         historia_melhorada = gerar_historia_gemini(historia_base)
         historinha.append({"historia":historia_melhorada})
-        with open('/content/drive/MyDrive/pages/historias.json', 'w') as f:
+        with open('historias.json', 'w') as f:
           json.dump(historinha,f,indent=2)
           st.write("ADICIONADo")
         st.write(historia_melhorada)
@@ -144,7 +144,7 @@ def gerador_de_historias():
           historia_usuario = f"{personagem} {lugar} {evento}"
           historia_melhorada = gerar_historia_gemini(historia_usuario)
           historinha.append({"historia":historia_melhorada})
-          with open('/content/drive/MyDrive/pages/historias.json', 'w') as f:
+          with open('historias.json', 'w') as f:
             json.dump(historinha,f,indent=2)
           st.write(historia_melhorada)
           st.balloons()

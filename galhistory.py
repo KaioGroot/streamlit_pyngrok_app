@@ -4,7 +4,7 @@ import streamlit as st
 
 #acessar dados do arquivo json e mostar com streamlit.
 try:
-  with open("/content/drive/MyDrive/pages/historias.json") as f:
+  with open("historias.json") as f:
     historia = json.load(f)
     for i,hist in enumerate(historia):
       st.html(f"<span style='color:orange;text-shadow:1px 2px 3px orange'>------------------</span>")
