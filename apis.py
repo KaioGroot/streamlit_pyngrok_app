@@ -44,7 +44,7 @@ if chat:
 
 
     # Salva o histórico atualizado no arquivo
-    with open("/content/drive/MyDrive/pages/prompt.json", "w", encoding="utf-8") as f:
+    with open("prompt.json", "w", encoding="utf-8") as f:
      json.dump(history, f, indent=2)
     for msg in history:
      if msg["role"] == "user":
