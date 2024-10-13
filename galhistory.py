@@ -7,7 +7,7 @@ try:
   with open("historias.json") as f:
     historia = json.load(f)
     for i,hist in enumerate(historia):
-      st.html(f"<span id='comandos' style='color:orange;text-shadow:1px 2px 3px orange'>------------------{i}</span>")
+      st.html(f"<span id='comandos' class='comandos' style='color:orange;text-shadow:1px 2px 3px orange'>------------------{i}</span>")
       #st.markdown("---")
       st.write(historia[i]["historia"],i)
       st.markdown("---")
