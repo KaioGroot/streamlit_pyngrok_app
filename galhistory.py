@@ -14,7 +14,7 @@ try:
       st.html('''<script>
                      let comandos = document.getElementsByClassName('comandos');
                      for(let i = 0; i < comandos.length; i++){
-                       alert(i)
+                       console.log(i)
                        }
                 </script>''')
 except FileNotFoundError:
