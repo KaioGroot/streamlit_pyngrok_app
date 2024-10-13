@@ -13,6 +13,7 @@ try:
       st.markdown("---")
       st.html('''<script>
                      let comandos = document.getElementsByClassName('comandos');
+                     alert(comandos[0])
                      for(let i = 0; i < comandos.length; i++){
                        console.log(i)
                        }
