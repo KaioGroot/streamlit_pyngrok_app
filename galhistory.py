@@ -11,9 +11,8 @@ try:
       #st.markdown("---")
       st.write(historia[i]["historia"],i)
       st.markdown("---")
-st.html('''
-<script>
-  alert("ioo")
+st.html('''<script>
+ alert("ioo")
                      
 </script>''')
 except FileNotFoundError:
