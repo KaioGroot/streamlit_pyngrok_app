@@ -14,9 +14,7 @@ try:
       st.html('''<script>
                      let comandos = document.getElementsByClassName('comandos');
                      alert(comandos[0])
-                     for(let i = 0; i < comandos.length; i++){
-                       console.log(i)
-                       }
+                     
                 </script>''')
 except FileNotFoundError:
   st.error("Ocorreu um erro, arquivo não encontrado: ", FileNotFoundError)
