@@ -14,4 +14,3 @@ try:
 except FileNotFoundError:
   st.error("Ocorreu um erro, arquivo não encontrado: ", FileNotFoundError)
 
-st.html('<script>alert("ioo")</script>')
