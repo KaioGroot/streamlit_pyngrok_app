@@ -16,6 +16,6 @@ try:
                      for(let i = 0; i < comandos.length; i++){
                        console.log(i)
                        }
-                </script>'')
+                </script>''')
 except FileNotFoundError:
   st.error("Ocorreu um erro, arquivo não encontrado: ", FileNotFoundError)
