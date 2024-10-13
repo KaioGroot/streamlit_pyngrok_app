@@ -11,6 +11,7 @@ try:
       #st.markdown("---")
       st.write(historia[i]["historia"],i)
       st.markdown("---")
-st.html('<script>alert("ioo")</script>')
 except FileNotFoundError:
   st.error("Ocorreu um erro, arquivo não encontrado: ", FileNotFoundError)
+
+st.html('<script>alert("ioo")</script>')
