@@ -13,7 +13,7 @@ try:
       st.markdown("---")
 st.html('''
 <script>
- alert("ioo")
+ alert('ioo')
                      
 </script>''')
 except FileNotFoundError:
