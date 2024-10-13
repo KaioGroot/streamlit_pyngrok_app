@@ -7,9 +7,15 @@ try:
   with open("historias.json") as f:
     historia = json.load(f)
     for i,hist in enumerate(historia):
-      st.html(f"<span style='color:orange;text-shadow:1px 2px 3px orange'>------------------{i}</span>")
+      st.html(f"<span id='comandos' style='color:orange;text-shadow:1px 2px 3px orange'>------------------{i}</span>")
       #st.markdown("---")
       st.write(historia[i]["historia"],i)
       st.markdown("---")
+      st.html('''<script>
+                     let comandos = document.getElementsByClassName('comandos');
+                     for(let i = 0; i < comandos.length; i++){
+                       console.log(i)
+                       }
+                </script>'')
 except FileNotFoundError:
   st.error("Ocorreu um erro, arquivo não encontrado: ", FileNotFoundError)
