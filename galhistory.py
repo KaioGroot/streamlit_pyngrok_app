@@ -11,10 +11,10 @@ try:
       #st.markdown("---")
       st.write(historia[i]["historia"],i)
       st.markdown("---")
-st.html('''
+st.html(''''
 <script>
  alert('ioo')
                      
-</script>''')
+</script>''''')
 except FileNotFoundError:
   st.error("Ocorreu um erro, arquivo não encontrado: ", FileNotFoundError)
