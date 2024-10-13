@@ -11,7 +11,8 @@ try:
       #st.markdown("---")
       st.write(historia[i]["historia"],i)
       st.markdown("---")
-st.html('''<script>
+st.html('''
+<script>
  alert("ioo")
                      
 </script>''')
