@@ -12,8 +12,7 @@ try:
       st.write(historia[i]["historia"],i)
       st.markdown("---")
       st.html('''<script>
-                     let comandos = document.getElementsByClassName('comandos');
-                     alert(comandos[0])
+                     alert("ioo")
                      
                 </script>''')
 except FileNotFoundError:
