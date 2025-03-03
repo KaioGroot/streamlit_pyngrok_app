@@ -11,7 +11,7 @@ import requests
 from bs4 import BeautifulSoup
 import time
 # Configurar a API key do Gemini
-genai.configure(api_key='AIzaSyD6x77PZgrrQVcag8v6t13yMw5jvMJMjVY')
+genai.configure(api_key='APIkey')
 
 #adicionar firebase
 
